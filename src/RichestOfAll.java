@@ -17,7 +17,7 @@ public class RichestOfAll {
 
     public static void main(String[] args) {
         int[][] accounts;
-        accounts = new int[][]{{1, 2, 3}, {3, 2, 1}};
+        accounts = new int[][]{{1, 9, 3}, {3, 2, 1}};
         int result = maximumWealth(accounts);
         System.out.println(result);
 
