@@ -15,6 +15,7 @@ public class ConcatenationOfArray {
         }
 
         concatenation(arr, n);
+        concatenation2(arr, n);
     }
 
     public static void concatenation(int[] arr, int n) {
@@ -25,6 +26,15 @@ public class ConcatenationOfArray {
             result[i+n] = arr[i];
         }
 
-        System.out.println("Result array after concatenation: "+ Arrays.toString(result));
+        System.out.println("Result array after 1st method of concatenation: "+ Arrays.toString(result));
+    }
+
+    public static void concatenation2(int[] arr, int n) {
+        int[] result = new int[2*n];
+
+        System.arraycopy(arr, 0, result, 0, n);
+        System.arraycopy(arr, 0, result, n, n);
+
+        System.out.println("Result from 2nd method of concatenation: "+Arrays.toString(result));
     }
 }
